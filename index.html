@@ -10,7 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>Prial India</title>
-
+    <style>
+        #blink {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00010e;
+            transition: 0.5s;
+        }
+    </style>
 
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -56,7 +63,9 @@
                             <li class="scroll-to-section"><a href="#electric">Electrical Safety</a></li>
                             <li class="scroll-to-section"><a href="#fire">Fire Control</a></li>
                             <li class="scroll-to-section"><a href="#safety">Safety Equipment</a></li>
-                            <li class="scroll-to-section"><a href="#school">Uniform & Shoes</a></li>
+                            <i class="fa fa-phone scroll-to-section"></i>
+                            <li class="scroll-to-section"><a id="blink">9555066663</a></li>
+                           
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -996,7 +1005,7 @@
                         <h2>Contact</h2>
                         <span>Email Us</span>
                     </div>
-                    <form id="subscribe" action="https://formsubmit.co/prial.distributors@gmail.com" method="POST">
+                    <form id="subscribe" action="https://formsubmit.co/prialindia@gmail.com" method="POST">
                         <div class="row">
                           <div class="col-lg-5">
                             <fieldset>
@@ -1031,13 +1040,13 @@
                         <div class="col-6">
                             <ul>
                                
-                                <li>Correspondence Adress:<br><span>Office No.31,3rd Floor,Dharamveer Market,Near Temple,Opp.Badarpur Metro Station,New Delhi - 110044</span></li>
-                                <li>Email:<br><span>prial.distributors@gmail.com</span></li>
+                                <li>Correspondence Adress:<br><span><b>Prial India Office No.31,3rd Floor,Dharamveer Market,Near Temple,Opp.Badarpur Metro Station,New-Delhi - 110044</b></span></li>
+                                <li>Email:<br><span><b>prialindia@gmail.com</b></span></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
-                                <li>Phone:<br><span>9555066663</span></li>
+                                <li>Phone:<br><span><b>9555066663</b></span></li>
                                
                             </ul>
                         </div>
@@ -1110,7 +1119,12 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
     <script>
 
         $(function() {
